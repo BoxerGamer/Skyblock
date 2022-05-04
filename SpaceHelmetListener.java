@@ -11,7 +11,7 @@ public class SpaceHelmetListener implements Listener {
     @EventHandler
     public void onBlockPlace(BlockPlaceEvent e){
 
-            if(e.getPlayer().getInventory().getItemInMainHand().getItemMeta().getDisplayName().equals(ChatColor.RED + "Boxer's Space Helmet")){
+            if(e.getPlayer().getInventory().getItemInMainHand().getItemMeta().getDisplayName().equals("§cBoxer's Space Helmet")){
                 e.getPlayer().sendMessage("§cSorry! You can't place this item");
 
                 e.setCancelled(true);
